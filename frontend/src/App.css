@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: rgb(0, 0, 0); */
+}
+body{
+  background:url('/public/bgImg.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:120vh;
+  width: 100%;
+}
+.heading{
+  color: rgb(219, 168, 168);
+  justify-content: center;
+  margin: 3rem 20rem 80rem 20rem;
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: "Barrio", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.recommend-btn{
+  position: absolute;
+  left: 32%;
+  background-color: rgb(243, 129, 129) !important;
+}
+.userInput{
+  position: absolute;
+  top: 18%;
+  left:30%;
+  font-size: 1.2rem;
+  margin: 4rem 15rem 20rem 4rem;
+  color: rgb(232, 166, 166);
+   font-family: "Concert One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* .userInput textField{
+  color: white;
+} */
+.text-field{
+  width: 100%;
+  margin-bottom: 4rem;
+}
+.reco-title{
+  text-align: center;
+  color: white;
+  font-family: "Barrio", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  justify-content: left;
+   position: absolute;
+  top: 60%;
+  left: 40%;
+  margin-top: 1rem;
+}
+.card-grid{
+  position: absolute;
+  top: 68%;
+  left: 8%;
+}
