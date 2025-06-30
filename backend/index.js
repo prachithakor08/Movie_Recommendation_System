@@ -3,13 +3,12 @@ const cors = require('cors');
 const { PythonShell } = require('python-shell');
 
 const app = express();
-app.use(cors());
-app.use(express.json());
 
 app.use(cors({
-    origin: '*', // OR replace with your frontend URL for security
+    origin: 'https://movie-recommendation-system-frontend-5y8d.onrender.com' // replace with '*' during local testing if needed
 }));
 
+app.use(express.json());
 
 app.post('/recommend', async (req, res) => {
     const { movie } = req.body;
@@ -17,7 +16,6 @@ app.post('/recommend', async (req, res) => {
 
     try {
         const results = await PythonShell.run('recommender.py', options);
-        // console.log("Python results:", results);
         res.json({ recommended_movies: results });
     } catch (err) {
         console.error("Python error:", err);
