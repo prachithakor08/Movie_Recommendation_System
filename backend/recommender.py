@@ -1,10 +1,10 @@
 import sys
 import pickle
 import pandas as pd
-
+import joblib
 # Load your model artifacts
 movies = pd.read_pickle('movies.pkl')            
-similarity = pickle.load(open('similarities.pkl','rb'))
+similarity = joblib.load('similarities.pkl')
 
 def recommend(movie):
     if movie not in movies['title'].values:

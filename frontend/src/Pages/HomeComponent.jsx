@@ -5,7 +5,7 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-
+import server from '../environment.js';
 
 export default function HomeComponent() {
     const [movie, setMovie] = useState('');
@@ -28,7 +28,7 @@ export default function HomeComponent() {
     e.preventDefault();
     console.log(movie);
     try {
-        const response = await fetch('http://localhost:5000/recommend', {
+        const response = await fetch(`${server}/recommend`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ movie }),

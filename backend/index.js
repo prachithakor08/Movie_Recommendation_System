@@ -6,6 +6,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.use(cors({
+    origin: '*', // OR replace with your frontend URL for security
+}));
+
 
 app.post('/recommend', async (req, res) => {
     const { movie } = req.body;
