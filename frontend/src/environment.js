@@ -1,7 +1,7 @@
-let IS_PROD = false;
+let IS_PROD = true;
 
 const server = IS_PROD ?
-    "https://movierecommender-backend-n1ls.onrender.com" :
+    "https://movie-recommendation-system-backend-f6ub.onrender.com" :
 
     "http://localhost:5000"
 
