@@ -28,7 +28,7 @@ A clean, simple Movie Recommendation Web App suggesting movies similar to your f
 
 **✨ Screenshots**
 ### 🏠 Home Page
-![Home Page](screenshots/home.png)
+![Home Page](screenshots/home.png.png)
 
 ### 🎥 Recommendations Display
-![Recommendations](screenshots/recommendations.png)
+![Recommendations](screenshots/Recommendations.png.png)
